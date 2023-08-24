@@ -112,3 +112,4 @@ git switch 브랜치저장했던이름
 git branch -D 이름 -> 브랜치 삭제
 git merge 합치는 브랜치명 -> 병합
 
+=>git branch A 만들고 난후 새로 파일 만들고  다시 master로 돌아가면 새로 만든 파일이 없어진다 (사라지는게 아니다)
