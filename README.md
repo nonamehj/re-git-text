@@ -63,3 +63,5 @@ git reset --hard HEAD^^ (두단계 일경우)
 
 git reset --hard HEAD^ (한단계 일경우)
 레파지토리에 처음에 올린 text1, text2 내용만 남아 있고 나머지 기록은 다 사라진다
+
+=> git log로 확인해보면 되돌린 커밋 확인해서 알 수 있다 
