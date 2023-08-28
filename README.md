@@ -113,3 +113,15 @@ git branch -D 이름 -> 브랜치 삭제
 git merge 합치는 브랜치명 -> 병합
 
 =>git branch A 만들고 난후 새로 파일 만들고  다시 master로 돌아가면 새로 만든 파일이 없어진다 (사라지는게 아니다)
+
+@merge 병합
+merge 할 때 합치고 싶은 브랜치로 들어가서 merge 사용
+branch 작성한것을 main 하고 합치고 싶다면
+git checkout main 으로 들어가서 git merge 합칠브랜치명 한다.
+
+(main 안에 A 브랜치가 들어와 있음)
+
+- 사용한 branch 삭제 방법
+git branch -D 삭제할브랜치명
+
+
