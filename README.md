@@ -133,9 +133,13 @@ pull = 원격저장소에 얻어와서 합치기
 fetch = 원격저장소에서 열기
 clone = 원격저장소에 복사하기
 
+git remote -v 로  등록한 주소를 확인 할 수 있다
+
 - git remote add 단축이름  주소
 =>git remote add origin 깃허브 원격주소
 (origin 주로 단축으로 많이 씀)
+
+
 
 - git push -u origin master(or main)  =>마스터브랜치로 올리겠다
 ex)
