@@ -124,4 +124,44 @@ git checkout main 으로 들어가서 git merge 합칠브랜치명 한다.
 - 사용한 branch 삭제 방법
 git branch -D 삭제할브랜치명
 
+--------------------------------------
+@원격자정소와 상호작용
+(로컬 저장소의 상태와 원격저장소(git hub)의 상태를 동일하게 맞춘다!)
+remote =원격저장소에 조회(추가)하기
+push = 원격저장소에 밀어넣기
+pull = 원격저장소에 얻어와서 합치기
+fetch = 원격저장소에서 열기
+clone = 원격저장소에 복사하기
+
+- git remote add 단축이름  주소
+=>git remote add origin 깃허브 원격주소
+(origin 주로 단축으로 많이 씀)
+
+- git push -u origin master(or main)  =>마스터브랜치로 올리겠다
+ex)
+만약 A브랜치에서 push 하겠다면
+git push origin A 하면 된다
+
+- git pull origin master 
+  (origin에 있는 master 브랜치를 가져와라)
+= 땡겨와서 머지 시킨다
+= 원격저장소의 origin의 master브랜치를 가져와서 합쳐라
+
+- git fetch origin master (주로 다른거와 비교할때)
+  (origin에 있는 master 브랜치를 가져와라)
+= 가져오는데 합치지 않고 일단가져오기
+= 가져오면 파일이 보이지는 않음
+(임시 FETCH_HEAD (브랜치)or origin/master 확인) 둘중 하나 사용함
+= 수동으로 머지 해야함
+
+만약 임시브랜치가  브랜치로 쓰일거면 git swtich -c 새로운 브랜치를 만들어서 브랜치로 사용하라 (직접볼수있게 사용함)
+브랜치로 만들거 아니고 master에서 바로 머지 해도 상관없음
+git merge (fetch에서 만들어준 임시 브랜치명)
+
+
+-git clone 주소
+
+= 통째로(원격저장소) 복사해서 가져옴
+= 처음 새 컴퓨터에 프로젝트를 가져올때 사용함
+= init 할 필요가 없음
 
